@@ -63,7 +63,7 @@ public class Kotik extends Carnivorous implements Run, Voice {
 
     @Override
     public String getVoice() {
-        return this.voice;
+        return this.voice = "Мяу";
     }
 
     @Override

@@ -3,7 +3,8 @@ package animals;
 import food.Food;
 
 public abstract class Animal {
-    private int satiety =15;
+    private int satiety = 15;
+
     public int getSatiety() {
         return satiety;
     }
@@ -16,5 +17,6 @@ public abstract class Animal {
     public String swim() {
         return null;
     }
+
 
 }

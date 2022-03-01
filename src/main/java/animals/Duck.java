@@ -1,7 +1,7 @@
 package animals;
 
 public class Duck extends Herbivore implements Fly, Swim, Voice {
-    private final String voice;
+    private String voice;
 
 
     public Duck() {

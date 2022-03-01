@@ -8,9 +8,9 @@ public abstract class Carnivorous extends Animal{
     @Override
     public void eat(Food food) {
         if (food instanceof Meat) {
-            System.out.println("Хищники едят мясо");
+            System.out.println("Ем мясо");
         }
-        else System.out.println("Хищники не едят траву");
+        else System.out.println("Трава мне не по душе");
 
     }
 }
