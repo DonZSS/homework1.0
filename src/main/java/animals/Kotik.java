@@ -41,9 +41,9 @@ public class Kotik extends Carnivorous implements Run, Voice {
         return satiety;
     }
 
-    public void setSatiety(int satiety) {
-        this.satiety = satiety;
-    }
+//    public void setSatiety(int satiety) {
+//        this.satiety = satiety;
+//    }
 
     public int getWeight() {
         return weight;

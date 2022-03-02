@@ -1,7 +1,8 @@
 package animals;
 
-public class Duck extends Herbivore implements Fly, Swim, Voice {
-    private String voice;
+public class Duck extends Herbivore implements Fly, Run, Swim, Voice {
+
+    private final String voice;
 
 
     public Duck() {
@@ -24,4 +25,8 @@ public class Duck extends Herbivore implements Fly, Swim, Voice {
         return "Утка плавает";
     }
 
+    @Override
+    public String run() {
+        return "Утка бежит";
+    }
 }

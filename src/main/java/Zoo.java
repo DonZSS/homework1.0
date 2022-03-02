@@ -38,19 +38,18 @@ public class Zoo {
 
 //        worker.getVoice(fish);
 
-        Animal[] createPond = createPond();
+        Swim[] createPond = createPond();
         System.out.println(createPond[0].swim());
         System.out.println(createPond[1].swim());
 
-
-        System.out.println(grass.getEnergy() + " -питательность травы");
-        System.out.println(meat.getEnergy() + " -питательность мясо");
+        System.out.println(elephant.getSatiety()  + " - сытость от травы");
+        System.out.println(wolf.getSatiety() + " - сытость от мясо");
 
     }
 
-    static Animal[] createPond() {
-        Animal[] createPond;
-        createPond = new Animal[2];
+    static Swim[] createPond() {
+        Swim[] createPond;
+        createPond = new Swim[2];
         createPond[0] = new Duck();
         createPond[1] = new Fish();
         return createPond;

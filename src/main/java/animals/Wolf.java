@@ -2,7 +2,7 @@ package animals;
 
 public class Wolf extends Carnivorous implements Run, Voice {
 
-    private String voice;
+    private final String voice;
 
 
     public Wolf() {

@@ -2,6 +2,5 @@ package animals;
 
 public interface Fly {
 
-
-    abstract String fly();
+    String fly();
 }

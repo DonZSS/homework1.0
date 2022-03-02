@@ -1,6 +1,7 @@
 package animals;
 
 public class Elephant extends Herbivore implements Run, Voice {
+
         private final String voice;
 
 
