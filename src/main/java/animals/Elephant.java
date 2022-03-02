@@ -2,23 +2,23 @@ package animals;
 
 public class Elephant extends Herbivore implements Run, Voice {
 
-        private final String voice;
+    private final String voice;
 
 
-        public Elephant() {
-            this.voice = "Ффффыыыыыы";
-        }
+    public Elephant() {
+        this.voice = "Ффффыыыыыы";
+    }
 
 
-        @Override
-        public String getVoice() {
-            return this.voice;
-        }
+    @Override
+    public String getVoice() {
+        return this.voice;
+    }
 
-        @Override
-        public String run() {
-            return "Слон бежит";
-        }
+    @Override
+    public String run() {
+        return "Слон бежит";
+    }
 
 
 }
