@@ -1,11 +1,14 @@
 package animals;
 
+import model.Size;
+
 public class Elephant extends Herbivore implements Run, Voice {
 
     private final String voice;
 
 
-    public Elephant() {
+    public Elephant(String name) {
+        super(name);
         this.voice = "Ффффыыыыыы";
     }
 
@@ -21,4 +24,8 @@ public class Elephant extends Herbivore implements Run, Voice {
     }
 
 
+    @Override
+    public Size getSize() {
+        return Size.LARGE;
+    }
 }

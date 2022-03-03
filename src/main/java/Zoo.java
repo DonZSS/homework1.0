@@ -5,12 +5,12 @@ import food.Meat;
 
 public class Zoo {
     public static void main(String[] args) {
-        Duck duck = new Duck();
-        Elephant elephant = new Elephant();
-        Fish fish = new Fish();
-        Kotik kotik = new Kotik();
-        Rabbit rabbit = new Rabbit();
-        Wolf wolf = new Wolf();
+        Duck duck = new Duck("Утка");
+        Elephant elephant = new Elephant("Слон");
+        Fish fish = new Fish("Рыба");
+        Kotik kotik = new Kotik("Котик");
+        Rabbit rabbit = new Rabbit("Кролик");
+        Wolf wolf = new Wolf("Волк");
 
         Grass grass = new Grass();
         Meat meat = new Meat();
@@ -50,8 +50,8 @@ public class Zoo {
     static Swim[] createPond() {
         Swim[] createPond;
         createPond = new Swim[2];
-        createPond[0] = new Duck();
-        createPond[1] = new Fish();
+        createPond[0] = new Duck("Утка");
+        createPond[1] = new Fish("Рыба");
         return createPond;
     }
 }
