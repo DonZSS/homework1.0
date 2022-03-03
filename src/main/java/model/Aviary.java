@@ -8,7 +8,7 @@ public class Aviary<T extends Animal> {
     private Size size;
     private T zooAnimal;
 
-    private HashMap<String, T> storageAviary  = new HashMap<>();
+    private HashMap<String, T> aviaryMap  = new HashMap<>();
 
     public Aviary(Size size) {
         this.size = size;
@@ -16,19 +16,19 @@ public class Aviary<T extends Animal> {
 
     public void addAnimal(T zooAnimal) {
         if (size.equals(zooAnimal.getSize())) {
-            storageAviary.put(zooAnimal.getName(), zooAnimal);
+            aviaryMap.put(zooAnimal.getName(), zooAnimal);
         } else {
             throw new WrongSizeException("Размер вольера не предназначен для " + zooAnimal.getName());
         }
     }
 
-    public Animal getAnimal(String name) {
-        return storageAviary.get(name);
+    public animals.Animal getAnimal(String name) {
+        return aviaryMap.get(name);
     }
 
     public boolean removeAnimal(String name) {
-        if (storageAviary.containsKey(name)) {
-            storageAviary.remove(name);
+        if (aviaryMap.containsKey(name)) {
+            aviaryMap.remove(name);
         return true;
         }
         else {
