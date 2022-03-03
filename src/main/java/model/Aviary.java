@@ -15,11 +15,11 @@ public class Aviary<T extends Animal> {
     }
 
     public void addAnimal(T zooAnimal) {
-//        if (size.equals(zooAnimal.getSize())) {
-//            storageAviary.put(zooAnimal.getName(), zooAnimal);
-//        } else {
-//            throw new WrongSizeException("Вольер не предназначен для " + zooAnimal);
-//        }
+        if (size.equals(zooAnimal.getSize())) {
+            storageAviary.put(zooAnimal.getName(), zooAnimal);
+        } else {
+            throw new WrongSizeException("Размер вольера не предназначен для " + zooAnimal);
+        }
     }
 
     public Animal getAnimal(String name) {
