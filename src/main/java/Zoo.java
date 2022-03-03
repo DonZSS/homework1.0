@@ -88,10 +88,10 @@ public class Zoo {
     }
 
     static Carnivorous getCarnivorous(String name) {
-        return (Carnivorous) carnivorousAviary.getAnimal(name);
+        return carnivorousAviary.getAnimal(name);
     }
 
     static Herbivore getHerbivore(String name) {
-        return (Herbivore) herbivoreAviary.getAnimal(name);
+        return herbivoreAviary.getAnimal(name);
     }
 }

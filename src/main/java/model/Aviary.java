@@ -22,7 +22,7 @@ public class Aviary<T extends Animal> {
         }
     }
 
-    public animals.Animal getAnimal(String name) {
+    public T getAnimal(String name) {
         return aviaryMap.get(name);
     }
 
