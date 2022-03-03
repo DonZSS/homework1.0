@@ -18,7 +18,7 @@ public class Aviary<T extends Animal> {
         if (size.equals(zooAnimal.getSize())) {
             storageAviary.put(zooAnimal.getName(), zooAnimal);
         } else {
-            throw new WrongSizeException("Размер вольера не предназначен для " + zooAnimal);
+            throw new WrongSizeException("Размер вольера не предназначен для " + zooAnimal.getName());
         }
     }
 
@@ -27,7 +27,14 @@ public class Aviary<T extends Animal> {
     }
 
     public boolean removeAnimal(String name) {
-
+        if (storageAviary.containsKey(name)) {
+            storageAviary.remove(name);
+        return true;
+        }
+        else {
+            System.out.println(zooAnimal.getName() + " не в вольере");
+            return false;
+        }
 
     }
 }
