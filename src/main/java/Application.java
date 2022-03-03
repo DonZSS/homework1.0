@@ -3,7 +3,7 @@ import animals.Kotik;
 public class Application {
     public static void main(String[] args) {
         Kotik kotik1 = new Kotik("Борис", "Мяу", 5, 10);
-        Kotik kotik2 = new Kotik();
+        Kotik kotik2 = new Kotik("Черныш");
 
         kotik2.setName("Мурка");
         kotik2.setVoice("Мммяяяууу");
