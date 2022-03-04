@@ -1,11 +1,14 @@
 package animals;
 
+import model.Size;
+
 public class Wolf extends Carnivorous implements Run, Voice {
 
     private final String voice;
 
 
-    public Wolf() {
+    public Wolf(String name) {
+        super(name);
         this.voice = "У-у-у-у-у";
     }
 
@@ -20,4 +23,8 @@ public class Wolf extends Carnivorous implements Run, Voice {
         return "Волк бежит";
     }
 
+    @Override
+    public Size getSize() {
+        return Size.LARGE;
+    }
 }
